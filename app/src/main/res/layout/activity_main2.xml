@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/RED"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:text="RED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ORANGE"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:text="ORANGE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/RED"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/YELLOW"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text="YELLOW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BLUE"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#0000FF"
+        android:gravity="center"
+        android:text="BLUE"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ORANGE" />
+
+    <TextView
+        android:id="@+id/GREEN"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#00FF00"
+        android:gravity="center"
+        android:text="GREEN"
+        app:layout_constraintEnd_toStartOf="@+id/BLUE"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/INDIGO"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="INDIGO"
+        android:textColor="#fff"
+        app:layout_constraintStart_toEndOf="@+id/BLUE"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VIOLET"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#BC8F8F"
+        android:gravity="center"
+        android:text="VIOLET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BLUE" />
+</androidx.constraintlayout.widget.ConstraintLayout>
